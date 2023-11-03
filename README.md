@@ -8,3 +8,11 @@ Use the below command for extracting
 ```
 tar xf blender-binaries.tar.xz
 ```
+
+## Building Dockerfile
+Use the below command for dockerfile execution
+
+```
+docker build -f Dockerfile . -t blender-app
+```
+
