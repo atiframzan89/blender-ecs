@@ -1,0 +1,3 @@
+blender
+bpy
+boto3
