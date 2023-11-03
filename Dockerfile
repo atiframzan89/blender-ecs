@@ -29,7 +29,7 @@ RUN ls -ltrh
 
 #RUN echo "export PYTHONPATH=/usr/local/lib/python3.10/dist-packages" >> /etc/bash.bashrc
 #RUN echo "export PYTHONPATH=/usr/lib/python3/dist-packages" >> /etc/bash.bashrc
-#CMD [ "/usr/bin/python3", "/opt/blender/app/lambda_function.py" ]
-ENTRYPOINT [ "/usr/bin/python3", "-m", "awslambdaric" ]
+CMD [ "/usr/bin/python3", "/opt/blender/app/lambda_function.py" ]
+#ENTRYPOINT [ "/usr/bin/python3", "-m", "awslambdaric" ]
 # The CMD sets your handler location (filename.function)
-CMD [ "lambda_function.lambda_handler" ]
+#CMD [ "lambda_function.lambda_handler" ]
